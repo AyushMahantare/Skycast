@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #7a52ffb3, #2c9eb3);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  padding: 2rem;
+  width: 380px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgb(255, 255, 255);
+
+}
+
+
+.weather_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather_search {
+  position: relative;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  border: none;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  outline: none;
+  padding: 10px 40px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+input:focus {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+input::placeholder {
+  color: #ddd;
+}
+
+.weather_search i {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  color: #fff;
+}
+
+
+.weather_body {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.weather_city {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.weather_date_time {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 1rem;
+}
+
+
+.weather_forecast {
+  background: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+
+.weather_icon img {
+  width: 100px;
+  margin: 10px 0;
+  filter: drop-shadow(2px 4px 10px rgba(0,0,0,0.5));
+}
+
+
+.weather_temperature {
+  font-size: 48px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+
+.weather_minmax {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.weather_info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 2rem;
+}
+
+.weather_card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255,255,255,0.2);
+  padding: 12px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.weather_card:hover {
+  transform: translateY(-5px) scale(1.03);
+  background: rgba(255,255,255,0.3);
+}
+
+
+.weather_card i {
+  font-size: 20px;
+}
+
+
+.weather_card p {
+  font-size: 13px;
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+}
